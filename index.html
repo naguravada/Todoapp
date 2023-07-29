@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="input-container">
+            <div class="input-row">
+                <label for="taskInput">Title:</label>
+                <input type="text" id="taskInput" placeholder="Enter task...">
+            </div>
+            <div class="input-row">
+                <label for="dateInput">Date:</label>
+                <input type="date" id="dateInput">
+            </div>
+            <div class="input-row">
+                <label for="descriptionInput">Description:</label>
+                <textarea id="descriptionInput" placeholder="Enter description..."></textarea>
+            </div>
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="taskList">
+            <!-- Tasks will be added here dynamically -->
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
